@@ -9,7 +9,8 @@
     "lint": "eslint",
     "prettier:check": "prettier --check src",
     "prettier:write": "prettier --write src",
-    "prepare": "husky"
+    "prepare": "husky",
+    "start": "npx tsc && node dist/index.js"
   },
   "keywords": [
     "AI",
@@ -40,5 +41,9 @@
     "prettier": "3.6.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.71.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "openai": "^7.39.0"
   }
 }
