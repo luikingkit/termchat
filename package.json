@@ -6,7 +6,9 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prettier:check": "prettier --check src",
+    "prettier:write": "prettier --write src"
   },
   "keywords": [
     "AI",
@@ -30,7 +32,9 @@
     "@eslint/js": "^10.0.1",
     "@types/node": "^26.6.5",
     "eslint": "^10.13.0",
+    "eslint-config-prettier": "^10.1.8",
     "globals": "^17.13.0",
+    "prettier": "3.6.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.71.2"
   }
